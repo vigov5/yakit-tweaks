@@ -393,7 +393,7 @@ Promise.all([]).then(function (_) {
 
   function hasNoMonacoParent(node) {
     let current = node;
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 3; i++) {
       if (!current.parentElement) break;
       current = current.parentElement;
       if (current.className.includes("monaco")) {

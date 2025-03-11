@@ -7,9 +7,9 @@ function addCssString(cssString) {
 
 addCssString(`
 :where(div[class^="HttpQueryAdvancedConfig_http-query-advanced-config"]) {
-    max-width: 500px;
-    min-width: 500px;
-    width: 500px;
+    max-width: 500px !important;
+    min-width: 500px !important;
+    width: 500px !important;
 }
 
 :where(div[class^="funcDomain_ui-op-plus-wrapper"]) {
@@ -50,5 +50,9 @@ div[class^="MITMServerHijacking_plugin-hijack-content-list"] div[class^="YakitRa
 
 :where(div[class^="YakitHint_yakit-hint-modal-container"]) {
     width: 600px !important;
+}
+
+:where(div[class^="FuzzerSequence_fuzzer-sequence-left"]) {
+    width: 350px !important;
 }
 `);
